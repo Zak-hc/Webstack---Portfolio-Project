@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# config.py dont tuch this configuration please
+# config.py
 import os
 from urllib.parse import quote_plus
 
