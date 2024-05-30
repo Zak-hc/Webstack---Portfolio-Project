@@ -1,3 +1,4 @@
+Project
 Français :
 Une plateforme de recrutement spécialisée a été développée, offrant une gamme étendue de services destinés aux entreprises. Cette plateforme propose des solutions publicitaires sur mesure permettant aux entreprises de promouvoir efficacement leurs offres d'emploi. De plus, elle fournit des rapports d'évaluation approfondis sur les entreprises, permettant aux utilisateurs d'accéder à des informations pertinentes pour prendre des décisions éclairées. En outre, la plateforme inclut un système de feedback des employés, offrant ainsi aux entreprises des insights précieux sur leur culture d'entreprise et leur gestion des ressources humaines. Avec une large sélection d'annonces d'emploi provenant des secteurs privé et public, cette plateforme est un outil essentiel pour les professionnels du recrutement et les entreprises en quête de talents qualifiés.
 
