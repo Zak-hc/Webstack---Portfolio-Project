@@ -1,0 +1,54 @@
+  error: subprocess-exited-with-error
+
+  × Building wheel for mysqlclient (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [44 lines of output]
+      # Options for building extension module:
+        extra_compile_args: ['-I/path/to/mysql/include', '-std=c99']
+        extra_link_args: ['-L/path/to/mysql/lib', '-lmysqlclient']
+        define_macros: [('version_info', (2, 2, 4, 'final', 0)), ('__version__', '2.2.4')]
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build/lib.macosx-10.9-universal2-cpython-310
+      creating build/lib.macosx-10.9-universal2-cpython-310/MySQLdb
+      copying src/MySQLdb/release.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb
+      copying src/MySQLdb/cursors.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb
+      copying src/MySQLdb/connections.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb
+      copying src/MySQLdb/__init__.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb
+      copying src/MySQLdb/times.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb
+      copying src/MySQLdb/converters.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb
+      copying src/MySQLdb/_exceptions.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb
+      creating build/lib.macosx-10.9-universal2-cpython-310/MySQLdb/constants
+      copying src/MySQLdb/constants/FLAG.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb/constants
+      copying src/MySQLdb/constants/CLIENT.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb/constants
+      copying src/MySQLdb/constants/__init__.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb/constants
+      copying src/MySQLdb/constants/ER.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb/constants
+      copying src/MySQLdb/constants/CR.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb/constants
+      copying src/MySQLdb/constants/FIELD_TYPE.py -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb/constants
+      running egg_info
+      writing src/mysqlclient.egg-info/PKG-INFO
+      writing dependency_links to src/mysqlclient.egg-info/dependency_links.txt
+      writing top-level names to src/mysqlclient.egg-info/top_level.txt
+      reading manifest file 'src/mysqlclient.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      adding license file 'LICENSE'
+      writing manifest file 'src/mysqlclient.egg-info/SOURCES.txt'
+      copying src/MySQLdb/_mysql.c -> build/lib.macosx-10.9-universal2-cpython-310/MySQLdb
+      running build_ext
+      building 'MySQLdb._mysql' extension
+      creating build/temp.macosx-10.9-universal2-cpython-310
+      creating build/temp.macosx-10.9-universal2-cpython-310/src
+      creating build/temp.macosx-10.9-universal2-cpython-310/src/MySQLdb
+      clang -Wno-unused-result -Wsign-compare -Wunreachable-code -fno-common -dynamic -DNDEBUG -g -fwrapv -O3 -Wall -arch arm64 -arch x86_64 -g -I/usr/local/opt/mysql/include "-Dversion_info=(2, 2, 4, 'final', 0)" -D__version__=2.2.4 -I/Users/zakaria/PFE/Agil/env/include -I/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10 -c src/MySQLdb/_mysql.c -o build/temp.macosx-10.9-universal2-cpython-310/src/MySQLdb/_mysql.o -I/path/to/mysql/include -std=c99
+      src/MySQLdb/_mysql.c:29:10: fatal error: 'mysql.h' file not found
+      #include "mysql.h"
+               ^~~~~~~~~
+      1 error generated.
+      error: command '/usr/bin/clang' failed with exit code 1
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for mysqlclient
+ERROR: Could not build wheels for mysqlclient, which is required to install pyproject.toml-based projects
