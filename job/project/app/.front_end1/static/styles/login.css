@@ -1,0 +1,71 @@
+.login_part {
+  height: 700px;
+  width: 100%;
+  /* border: 4px blue solid; */
+  display: flex;
+}
+.rights {
+  width: 50%;
+  background-color: rgb(9, 147, 211);
+  background: linear-gradient(to right, rgb(0, 157, 255)) rgb(117, 177, 255);
+  border-radius: 30px;
+
+  height: 100;
+  display: inherit;
+  flex-direction: column;
+  /* padding: 10px; */
+  align-items: center;
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+}
+.lefts {
+  height: 100%;
+  /* background-color: bisque; */
+  background-image: url(../image/login.jpg);
+  background-size: cover;
+
+  width: 50%;
+}
+#inputbox {
+  padding: 20px 20px;
+  border: none;
+  border-radius: 50px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  width: 80%;
+  margin: 20px 0;
+}
+#wlcm1 {
+  color: white;
+  font-size: 70px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#lgnbtn,
+#sgbtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+#lgnbtn {
+  margin: 15px;
+  background-color: inherit;
+  color: white;
+  border: 2px white solid;
+}
+#sgbtn {
+  background-color: rgb(210, 187, 109);
+  background: linear-gradient(to right, rgb(238, 255, 0), rgb(242, 196, 59));
+}
+#lgnbtn:hover,
+#sgbtn :hover {
+  opacity: 70%;
+  /* background-color: white; */
+}

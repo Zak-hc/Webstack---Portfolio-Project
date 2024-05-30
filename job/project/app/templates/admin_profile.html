@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/admin_profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Montserrat:wght@300;400;500;600&family=Noto+Sans+Arabic:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Dashboard Admin</title>
+</head>
+<body>
+
+    <div class="empty_nav"></div>
+    <div class="dashboard_container">
+        <div class="title_section">
+            <h1>ADMIN PANEL - CALIMERO</h1>
+        </div>
+        <div class="profile_admin">
+            <div class="img_profile">
+                <img class="img_src_profile" src="/static/image/profile_img2.webp">
+            </div>
+            <div class="admin_email_user">
+                <div class="username_admin">
+                    <h5>Username : XXXX</h5>
+                </div>
+                <div class="username_admin">
+			<h5>Email : {{current_user.email}}</h5>
+                </div>
+                
+            </div>
+            <div class="banned_section">
+                <div class="title_banned_section">
+                    <h2>BAN</h2>
+                </div>
+                <!-- HERE FLASK LABEL AND INPUT FOR USERNAME -->
+                <div>
+                    <input class="input_username" type="text">
+                </div>
+                <!-- HERE BTN FOR BAN -->
+                <button class="btn_ban">DONE</button>
+            </div>
+            <div class="last_register_section">
+                <div class="last_register">
+                    <h2>Last Register</h2>
+                </div>
+                <table>
+                    <tr>
+                      <th>Userame</th>
+                      <th>Email</th>
+                      <th>Time</th>
+                    </tr>
+                    <tr>
+                      <td>fanida</td>
+                      <td>fanida1@gmail.com</td>
+                      <td>12/22/2023</td>
+                    </tr>
+                    <tr>
+                      <td>saida</td>
+                      <td>saida@gmail.com</td>
+                      <td>12/22/2023</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+
+        <fieldset>
+            <legend>NEW POST</legend>
+            <form action="POST">
+                <!-- POST TITLE -->
+            <label for="POST TITLE">POST TITLE :</label>
+            <input class="input_title" type="text">
+            <div class="border-split"></div>
+
+                <!-- POST DESCTIPTIO -->
+                <label for="description_Post">DESCRIPTION :</label>
+                <textarea class="text_post">
+
+                </textarea>
+
+                <!-- POST BY -->
+                <label for="POST BY">POST BY :</label>
+                <input class="post_by" type="text">
+                <div class="border-split"></div>
+
+                <!-- CATY -->
+                <label for="category">Category :</label>
+                <input class="category" type="text">
+                <div class="border-split"></div>
+                
+
+                <!-- IMG FEATURE -->
+                <label for="upload_img">UPLOAD IMG :</label>
+                <input class="upload_img" type="file">
+
+                <!-- BTN SUBMIT -->
+                <button class="post_btn">POST</button>
+            </form>
+            
+        </fieldset>
+    </div>
+
+    <!-- FOOTER PLACE -->
+    <footer>
+        
+    </footer>
+
+    
+</body>
+</html>

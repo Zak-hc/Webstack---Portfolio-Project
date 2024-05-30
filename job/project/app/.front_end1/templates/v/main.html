@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  <link rel="stylesheet" href="../static/css/main.css">  hadi method classic ohadi li ltht
+    B jinja style !  -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static' , filename='styles/jinjatest.css')}}"> -->
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/contact.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/footer.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/login.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/styles.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/test.css')}}">
+    <!-- lets call js white jinja style  -->
+    <script src="{{ url_for('static' , filename='js/login.js') }}"></script>
+
+    {% block head %} {% endblock %}
+</head>
+
+<body>
+    <section class="Header1" style="height: 100px;">
+        <div class="navbar1">
+            <div class="logoA"> </div>
+            <div class="ctgries1">
+                <span><a href="">Accueil</a></span>
+
+            </div>
+            <div class="cntcUSBTN">
+
+                <a href="{{ url_for('login')}}" id="signinbtn"> Sign in</a>
+
+                <button id="signupbtn">Sign UP</button>
+
+
+                <!-- <span id="cntctus_btn1"> CONTACT US</span> -->
+            </div>
+        </div>
+
+    </section>
+
+    {% block body %} {% endblock %}
+
+
+
+
+    {% block footer %} {% endblock %}
+    <!-- omaima part  -->
+    <footer class="om_footer">
+        <footer>
+            {% block HOMPE_page_footer %} {% endblock %}
+            <!-- First Section: Employment-related elements -->
+
+
+
+
+
+
+
+
+
+            <!-- Second Section: Contact Information -->
+            <div class="content2">
+                <div class="section2">
+                    <h2 id="connect1">Connect with Us</h2>
+                    <br>
+                    <ul>
+                        <li><a id="section2a" href="https://www.linkedin.com/">LinkedIn</a></li>
+                        <li><a id="section2a" href="https://www.x.com/">Twitter</a></li>
+                        <li><a id="section2a" href="https://www.fb.com/">Facebook</a></li>
+                    </ul>
+                </div>
+
+                <div class="section2">
+                    <h2 id="connect2">contact information</h2>
+                    <br>
+                    <p id="section2p">Email: ajitkhdm@gmail.com</p>
+                    <p id="section2p">Phone: +212 *********</p>
+                </div>
+
+                <div class="section2">
+                    <h4 id="connect3">Assistance</h4>
+                    <br>
+                    <ul id="assistance">
+
+                        <li><a href="{{ url_for('contact')}}" id="section2a" href="#">Nous contacter</a></li>
+                        <li><a id="section2a" href="#">Politique de confidentialité</a></li>
+                        <li><a id="section2a" href="#">Conditions générales d'utilisation</a></li>
+                        <li><a id="section2a" href="#">Politique des Cookies</a></li>
+                        <li><a id="section2a" href="#">Paramétrage des cookies</a></li>
+                        <li><a id="section2a" href="{{url_for('faq')}}">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="section_by_ycn">
+                    <div id="footer_logo">
+                        <!-- <h1> xxx</h1> -->
+
+                    </div>
+                    <div id="footer_des">
+                        <p id="short_des_ftr"> Notre plateforme offre un large éventail de postes dans divers secteurs,
+                            facilitant la recherche d'opportunités professionnelles stimulantes. Postulez facilement en
+                            ligne et prenez le prochain pas important dans votre carrière avec nous</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="sous">
+                <hd id="sous_pa">© 2023 Aji Tkhdm. All Rights Reserved.</hd>
+            </div>
+
+        </footer>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/login.js') }}"></script>
+
+</body>
+
+</html>

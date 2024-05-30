@@ -1,0 +1,22 @@
+<!-- templates/profile.html -->
+
+{% extends 'main.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/profile.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="profile-container">
+        <div class="profile-header">
+	<h1>User Profile not admin</h1>
+        <p>adddm: {{ current_user.is_admin }}</p>
+	</div>
+        <div class="profile-content">
+            <p>User ID: {{ current_user.id }}</p>
+            <p>Email: {{ current_user.email }}</p>
+            <!-- Ajoutez d'autres informations de profil ici -->
+        </div>
+    </div>
+{% endblock %}
+

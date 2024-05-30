@@ -1,0 +1,65 @@
+{%extends 'main.html' %}
+{% block head %}
+<link rel="stylesheet" href="/static/styles/register.css"> {% endblock %}
+{% block body %}
+<section class="login_part">
+    <div class="lefts">
+
+    </div>
+    <div class="rights">
+        <fieldset>
+            <legend></legend>
+            <div class="profile_place">
+            <div class="profile_form">
+                <img class="img_register_profile" src="/static/image/profile_img.png">
+            </div>
+
+            </div>
+            <form method="POST" action="{{ url_for('register') }}">
+		    <div id="piw">
+			<p></p>
+			{% with messages = get_flashed_messages(with_categories=true) %}
+			    {% if messages %}
+			        {% for category, message in messages %}
+			           <p>{{message}}</p>
+			        {% endfor %}
+			    {% endif %}
+			    {% endwith %}
+		   </div>
+                {{ form.hidden_tag() }}
+                <div class="register-grp">
+                    {{form.username.label()}}
+                    {{form.username(class="input_zone")}}
+                </div>
+                <div class="register-grp">
+                    {{form.email.label()}}
+                    {{form.email(class="input_zone")}}
+                </div>
+                <div class="register-grp">
+                    {{form.password.label()}}
+                    {{form.password(class="input_zone")}}
+                </div>
+                <div class="register-grp">
+                    {{form.confirm_password.label()}}
+                    {{form.confirm_password(class="input_zone")}}
+                </div>
+                <!-- <div>
+                    {{form.remember.label()}}
+                    {{form.remember()}}
+                </div> -->
+                <div class="register-btns">
+                    {{form.signup(class="register-grp_btn")}}
+                    <button class="register-grp_btn"><a href="{{url_for('login')}}">Sign In</a></button>
+                </div>
+
+            </form>
+        </fieldset>
+    </div>
+</section>
+
+<!-- link this file whit css  -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/login.js') }}"></script>
+{% endblock %}
+
+
+{% block footer %} {% endblock %}

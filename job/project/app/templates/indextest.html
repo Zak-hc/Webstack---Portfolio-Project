@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css  -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static' , filename='styles/jinjatest.css')}}"> -->
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/contact.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/footer.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/login.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/test.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/article.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static' , filename='styles/styles.css')}}">
+    <!-- end of cs -->
+
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+    <!-- end of test  -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../static/styles/style.css">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../static/styles/styles.css">
+
+    <TITle>{{contact_me}}</TITle>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- calemrp part  -->
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="../../calemero/css/style.css">
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <!-- omaima link  -->
+    <link rel="stylesheet" href="../../omaima/footer.css">
+    <link rel="stylesheet" href="../static/styles/footer.css">
+
+    <script src="{{ url_for('static', filename='login.js') }}"></script>
+    <!-- <script src="/static/login.js"></script> -->
+    <script src="../static/js/login.js"></script>
+    <script src="{{ url_for('static', filename='login.js') }}"></script>
+    <script type="text/javascript" src="../static/js/login.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header partie -->
+    <section class="Header1">
+        <div class="navbar1">
+            <div class="logoA"> </div>
+            <div class="ctgries1">
+                <span><a href="">Accueil</a></span>
+                <span><a href="">Secteur Prive</a></span>
+                <span><a href="">Secteur Public</a></span>
+                <span><a href="">And Constraint</a></span>
+                <span><a href="">More</a></span>
+            </div>
+            <div class="cntcUSBTN">
+
+                <a href="{{ url_for('login')}}" id="signinbtn"> Sign in</a>
+
+                <button id="signupbtn">Sign UP</button>
+
+
+                <!-- <span id="cntctus_btn1"> CONTACT US</span> -->
+            </div>
+        </div>
+
+        <!-- BIG HEDLINE 1 SEARCH BAR -->
+        <div class="headline_search">
+
+
+            <h1 id="bigH">TAKE THE FIRST STEP INTO THE INNOVATION HUB</h1>
+            <p id="tagline1">Lorem ipsum dolor sit amet consLorem i psum dolor sit amet cons Lorem ipsupsum dolor sit
+                amet cons Lorem ipsu psum dolor sit amet cons Lorem ipsum dolor sit amet
+                cons</p>
+
+            <div class="serachbar1">
+                <span id="finkhdam">
+                    <input id="firstinput" type="text" placeholder="Quel emploi recherchez-vous ?">
+                </span>
+                <span id="citysection"> <input id="citysectioninp" type="text" placeholder="Ville , region ..."></span>
+                <span class="searchbtn2">
+                    <button id="rechach">RESEARCH</button></span>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- first arab into  -->
+    <!-- <section class="mini_ar_intro">
+        <div class="mini_ar_intro_pic"></div>
+        <div class="mini_ar_intro_text">
+            <h1 dir="rtl" id="miniintro_h1">عرف المغرب تطور ملحوظ في السنوات الآخيرة
+            </h1>
+            <h3 dir="rtl" id="miniintro_h3">اذ ان الكثيرون استفادو من هذا التطور واستطاعو بدلك تغيير حياتهم بل تأمين
+                مستقبلهم
+            </h3>
+
+            <h4 dir="rtl" id="miniintro_h4">
+                ... الكثيرون يبحثون عن فرص عمل
+                <br>
+                ! نحن هنا لنغير حياتك للأفضل
+            </h4>
+        </div>
+    </section> -->
+    <!-- calemero part  -->
+    <div class="body_site">
+        <div class="title-section">
+            <h2>Les actualités de l'emploi</h2>
+        </div>
+        <div class="posts-container">
+            <div class="right-left">
+                <div class="img-main-post">
+                    <img class="img-size" src="../static/image/Adeline Palmerston.png"">
+                </div>
+                <p class=" bold-p">Comment le télétravail bouleverse le business des places de parking</p>
+                    <p class="text-post">L'essor du travail à distance rend vacant un grand nombre d'emplacements pour
+                        les
+                        véhicules des salariés. Comment optimiser ce parc ? Des solutions existent, susceptibles de
+                        générer
+                        des
+                        revenus</p>
+
+                    <div class="next-post">
+                        <div class="down-post">
+                            <div class="img-down-place">
+                                <img class="img-size" src="../static/image/post_down.png">
+                            </div>
+                            <div class="img-down-text">
+                                <!-- LATER I NEED TO FIX SIZE FOR LARG TEXT -->
+                                <p class="bold-p">Une erreur du médecin du travail peut coûter très cher à un salarié
+                                </p>
+                                <p class="text-post">Le conflit productif, appliqué à certaines règles, une excellente
+                                    manière
+                                    de faire passer un message à une personne .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="right-side-post">
+                        <div class="img-small-post">
+                            <img class="right-side-img-main" src="../static/image/post_img.png">
+                        </div>
+                        <div class="img-small-text">
+                            <p><a href="../pages/Article_Page.html">Une erreur du médecin du travail peut coûter très
+                                    cher à
+                                    un
+                                    salarié</a></p>
+                        </div>
+                    </div>
+                    <div class="right-side-post">
+                        <div class="img-small-post">
+                            <img class="right-side-img-main" src="../static/image/post_img2.png">
+                        </div>
+                        <div class="img-small-text">
+                            <p>Pourquoi 2024 sera un bon cru en matière de recrutement</p>
+                        </div>
+                    </div>
+                    <div class="right-side-post">
+                        <div class="img-small-post">
+                            <img class="right-side-img-main" src="../static/image/post_img3.png">
+                        </div>
+                        <div class="img-small-text">
+                            <p>Les règles des arrêts maladies et des congés payés vont-elles vraiment changer en France
+                                ?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-side-post">
+                        <div class="img-small-post">
+                            <img class="right-side-img-main" src="../static/image/img_post4.png">
+                        </div>
+                        <div class="img-small-text">
+                            <p>Syndrome du «talent d’Achille» : pourquoi les cadres français ne croient pas en leur
+                                talent
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-side-post">
+                        <div class="img-small-post">
+                            <img class="right-side-img-main" src="../static/image/img_post5.png">
+                        </div>
+                        <div class="img-small-text">
+                            <p>Attention, votre employeur peut vous interdire de fumer</p>
+                        </div>
+                    </div>
+                    <div class="right-side-post">
+                        <div class="img-small-post">
+                            <img class="right-side-img-main" src="../static/image/img_post_6.png">
+                        </div>
+                        <div class="img-small-text">
+                            <p>Une erreur du médecin du travail peut coûter très cher à un salarié</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="voir-tout">
+                <button>Voir tous les articles</button>
+            </div>
+
+            <div class="carriere_conseils">
+                <div class="nav_title">
+                    <h1>Les conseils carrière</h1>
+                </div>
+                <div class="boxx">
+                    <div class="post-carriere_info">
+                        <div class="text-img">
+                            <img class="img-size" src="../static/image/post__2_section.png">
+                        </div>
+                        <div class="text-box">
+                            <p>"Avez-vous des enfants ?" Comment bien répondre en entretien d'embauche</p>
+                        </div>
+                    </div>
+                    <div class="post-carriere_info">
+                        <div class="text-img">
+                            <img class="img-size" src="../static/image/post_img2.png">
+                        </div>
+                        <div class="text-box">
+                            <p>Prime d'activité : quel est son montant et qui peut en bénéficier ?</p>
+                        </div>
+                    </div>
+                    <div class="post-carriere_info">
+                        <div class="text-img">
+                            <img class="img-size" src="../static/image/post_img3.png">
+                        </div>
+                        <div class="text-box">
+                            <p>Le montant de cette aide de la Caf versée à 4,8 millions de Français pourrait baisser en
+                                janvier
+                                2024</p>
+                        </div>
+                    </div>
+                    <div class="post-carriere_info">
+                        <div class="text-img">
+                            <img class="img-size" src="../static/image/img_post4.png">
+                        </div>
+                        <div class="text-box">
+                            <p>"Avez-vous des enfants ?" Comment bien répondre en entretien d'embauche</p>
+                        </div>
+                    </div>
+                    <div class="post-carriere_info">
+                        <div class="text-img">
+                            <img class="img-size" src="../static/image/img_post5.png">
+                        </div>
+                        <div class="text-box">
+                            <p>Méfiez-vous de ces signes astrologiques si vous les croisez au travail</p>
+                        </div>
+                    </div>
+                    <div class="post-carriere_info">
+                        <div class="text-img">
+                            <img class="img-size" src="../static/image/img_post_6.png">
+                        </div>
+                        <div class="text-box">
+                            <p>Grâce à ces indices, je sais si j'ai plu au recruteur pendant l'entretien</p>
+                        </div>
+                    </div>
+                    <div class="post-carriere_info">
+                        <div class="text-img">
+                            <img class="img-size" src="../static/image/post__2_section.png">
+                        </div>
+                        <div class="text-box">
+                            <p>"Avez-vous des enfants ?" Comment bien répondre en entretien d'embauche</p>
+                        </div>
+                    </div>
+                    <div class="post-carriere_info">
+                        <div class="text-img">
+                            <img class="img-size" src="../static/image/main-post.webp">
+                        </div>
+                        <div class="text-box">
+                            <p>La prime de Noël arrive et 600 000 familles auront peut-être droit à un bonus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- end calemro part  -->
+        <!-- omaima part  -->
+        <footer class="om_footer">
+            <footer>
+                <!-- First Section: Employment-related elements -->
+                <div class="footer-content">
+                    <div class="footerheadline">
+                        <h1 id="headline">
+                            Nous vous accompagnons tout au long de votre carrière</h1>
+                    </div>
+                    <div class="footerul_li">
+                        <div class="section1">
+                            <h3 id="h3footer">recherche</h3>
+                            <br>
+                            <ul id="footerid">
+                                <li>-> CV</li>
+                                <li>-> Compétences CV</li>
+                                <li>-> Photo de CV</li>
+                                <li>-> Lettre de motivation</li>
+                                <li>-> Entretien d'embauche</li>
+                                <li>-> Générateur de CV</li>
+                            </ul>
+                        </div>
+
+                        <div class="section1">
+                            <h3 id="h3footer">
+                                En formation</h3>
+                            <br>
+                            <ul id="footerid">
+                                <li>-> Bilan de compétences</li>
+                                <li>-> Formation continue</li>
+                            </ul>
+                        </div>
+
+                        <div class="section1">
+                            <h3 id="h3footer">En congés</h3>
+                            <br>
+                            <ul id="footerid">
+                                <li>-> Congés payés</li>
+                                <li>-> Congé sans solde</li>
+                                <li>-> Congé paternité</li>
+                                <li>-> Congé maternité</li>
+                                <li>-> Congé parental</li>
+                                <li>-> Congé sabbatique</li>
+                            </ul>
+                        </div>
+
+                        <div class="section1">
+                            <h3 id="h3footer">En poste</h3>
+                            <br>
+                            <ul id="footerid">
+                                <li>-> Onboarding</li>
+                                <li>-> CDI</li>
+                                <li>-> CDD</li>
+                                <li>-> Leadership</li>
+                                <li>-> Burn out</li>
+                            </ul>
+                        </div>
+
+                        <div class="section1">
+                            <br>
+                            <ul id="footerid">
+                                <h3 id="h3footer">Sur le départ</h3>
+                                <li>-> Lettre de démission</li>
+                                <li>-> Rupture conventionnelle</li>
+                                <li>-> Indemnité de rupture conventionnelle</li>
+                                <li>-> Licenciement</li>
+                                <li>-> Indemnité de licenciement</li>
+                                <li>-> Retraite</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_btn">
+                        <button id="lastbtnx">Voir tous les articles </button>
+                    </div>
+                </div>
+
+
+
+                <!-- Second Section: Contact Information -->
+                <div class="content2">
+                    <div class="section2">
+                        <h2 id="connect1">Connect with Us</h2>
+                        <br>
+                        <ul>
+                            <li><a id="section2a" href="#">LinkedIn</a></li>
+                            <li><a id="section2a" href="#">Twitter</a></li>
+                            <li><a id="section2a" href="#">Facebook</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="section2">
+                        <h2 id="connect2">contact information</h2>
+                        <br>
+                        <p id="section2p">Email: ajitkhdm@gmail.com</p>
+                        <p id="section2p">Phone: +212 *********</p>
+                    </div>
+
+                    <div class="section2">
+                        <h4 id="connect3">Assistance</h4>
+                        <br>
+                        <ul id="assistance">
+
+                            <li><a id="section2a" href="#">Nous contacter</a></li>
+                            <li><a id="section2a" href="#">Politique de confidentialité</a></li>
+                            <li><a id="section2a" href="#">Conditions générales d'utilisation</a></li>
+                            <li><a id="section2a" href="#">Politique des Cookies</a></li>
+                            <li><a id="section2a" href="#">Paramétrage des cookies</a></li>
+                            <li><a id="section2a" href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="section_by_ycn">
+                        <div id="footer_logo">
+                            <!-- <h1> xxx</h1> -->
+
+                        </div>
+                        <div id="footer_des">
+                            <p id="short_des_ftr"> Notre plateforme offre un large éventail de postes dans divers
+                                secteurs,
+                                facilitant la recherche d'opportunités professionnelles stimulantes. Postulez facilement
+                                en
+                                ligne et prenez le prochain pas important dans votre carrière avec nous</p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="sous">
+                    <hd id="sous_pa">© 2023 Aji Tkhdm. All Rights Reserved.</hd>
+                </div>
+
+            </footer>
+        </footer>
+
+
+</body>
+
+</html>

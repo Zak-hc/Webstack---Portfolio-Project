@@ -1,0 +1,105 @@
+#piw{
+        width:90%;
+        color:red;
+        margin: auto;
+        text-align: center;
+        height: 35px;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  background-color: background-color: rgb(90, 161, 147);;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px 2px black;
+  margin: auto;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  color: white;
+  font-size: 19px;
+  width: 400px;
+  height: 75%;
+  /* padding: 25px; */
+}
+
+fieldset {
+  height: 75%;
+  background-color: rgb(90, 161, 147);
+  font-family: sans-serif;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 500px;
+  border-radius: 5px;
+}
+
+.register-grp {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  /* border: red solid 4px; */
+}
+
+.register-btns{
+  width:100%;
+  height: 70px;
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+.register-grp_btn{
+  margin: auto;
+  border: none;
+}
+
+.register-grp_btn{
+  width: 150px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-size: 19px;
+  height: 40px;
+}
+
+.input_zone {
+  height: 40px;
+  border-radius: 40px;
+  font-size: 20px;
+  margin-top: 5px;
+  font-family: sans-serif;
+  /* border: 1px solid grey; */
+  margin-bottom: 10px;
+  border: none;
+  padding: 3px;
+  width: 320px;
+  /* background-color: aqua; */
+}
+
+.profile_place{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  /* border: 1px solid black; */
+}
+
+.img_register_profile{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.profile_form {
+  width: 90px;
+  background-color: white;
+  border-radius: 5px;
+  /* background-color: rgb(90, 161, 147); */
+  height: 80px;
+
+  margin: 10px;
+  /* border: 1px solid black; */
+}
+

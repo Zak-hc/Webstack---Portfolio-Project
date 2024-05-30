@@ -1,0 +1,61 @@
+.contact_page {
+  height: 700px;
+  width: 100%;
+  display: flex;
+}
+.cntc_left {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(230, 189, 54);
+  background-image: url(../image/contact.jpg);
+  background-size: cover;
+}
+.cnrc_right {
+  height: 100%;
+  width: 50%;
+  background-color: rgb(9, 147, 211);
+  background: linear-gradient(to right, rgb(0, 157, 255)) rgb(117, 177, 255);
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+#input_cntct,
+#input_cntct_msg {
+  padding: 20px 20px;
+  border: none;
+  border-radius: 50px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  width: 80%;
+  margin: 20px 0;
+  /* padding: 0 0 0; */
+}
+#input_cntct_msg {
+  height: 20%;
+  padding: 0 0 5% 3%;
+}
+#cntct_btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  /* width: 10%; */
+  background-color: inherit;
+  border: 3px white solid;
+  color: white;
+}
+#cntcth1 {
+  color: white;
+  font-size: 70px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

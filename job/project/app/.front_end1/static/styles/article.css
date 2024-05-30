@@ -1,0 +1,152 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+.empty_nav{
+    width: 100%;
+    background-color: rgb(9, 147, 211);
+    /* border: 1px solid black; */
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+.atricle-container{
+    width: 55%;
+    margin: auto;
+    height: 1000px;
+    /* border: 1px solid black; */
+}
+
+.info_article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.info_now{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+
+}
+
+.info_path{
+    width: 100%;
+    align-self: flex-start;
+    color: white;
+    background-color: rgb(9, 147, 211);
+    height: 25px;
+    /* border: 1px solid orangered; */
+}
+
+.info_path h3{
+    margin-left: 10px;
+}
+
+.info_title{
+    width: 90%;
+    height: 110px;
+    /* border: 1px solid orangered; */
+}
+
+.time_and_par{
+    width: 90%;
+    height: 75px;
+    /* border: 1px solid orangered; */
+}
+
+.border{
+    width: 80px;
+    margin-left: 10px;
+    margin-top: 15px;
+    background-color: black;
+    height: 5px;
+}
+
+.time_zone{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    height: 50%;
+    /* border: 1px solid black; */
+}
+
+.time_date{
+    width: 100%;
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    height: 50%;
+    /* border: 1px solid black; */
+}
+
+.name_editor{
+    color: #135097;
+    border-bottom: 1px solid #135097;
+}
+
+.img_place_article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+    /* border: 1px solid green; */
+}
+
+.img_place_ar{
+    width: 90%;
+    height: 300px;
+    /* border: 1px solid black; */
+}
+
+.img-article-size{
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-article{
+    width: 100%;
+    display:flex;
+    padding: 15px;
+    flex-direction: column;
+    height: 900px;
+    margin-top: 5px;
+    /* border: 1px solid green; */
+}
+
+.title_post{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+.text_art{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-size: 21px;
+    height: 900px;
+    /* border: 1px solid black; */
+}
+
+.title-s2{
+    align-self: flex-start;
+    font-weight: bold;
+}

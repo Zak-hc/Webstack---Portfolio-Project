@@ -1,0 +1,70 @@
+{%extends 'main.html' %}
+{% block head %} {% endblock %}
+{% block body %}
+<head>
+    <link rel="stylesheet" href="/static/styles/login.css">
+</head>
+<section class="login_part">
+    <div class="lefts">
+
+    </div>
+    <div class="rights">
+        <fieldset class="login_fieldset">
+            <legend></legend>
+            <div class="profile_place">
+            <div class="profile_form">
+                <img class="img_register_profile" src="/static/image/profile_img.png">
+            </div>
+
+            </div>
+            <form class="form_login" method="POST" action="{{ url_for('login') }}">
+		<div style="margin:auto;width:100%;font-size:21px;text-align:center;color:white;" class="flash_message">
+			    <p></p>
+			    {% with messages = get_flashed_messages(with_categories=true) %}
+			        {% if messages %}
+				    {% for category, message in messages %}
+				        <p>{{ message }}</p>
+				    {% endfor %}
+			        {% endif %}
+		    </div>
+		    {% endwith %}
+                {{ form.hidden_tag() }}
+                <div class="login-grp">
+                    {{form.email.label()}}
+                    {{form.email(class="input_zone_login")}}
+                </div>
+                <div class="login-grp">
+                    {{form.password.label()}}
+                    {{form.password(class="input_zone_login")}}
+                </div>
+                <div class="login-grp_remember">
+                    {{form.remember.label()}}
+                    {{form.remember()}}
+                    <a href="{{url_for('register')}}"><p>You don have account?</p></a>
+                </div>
+                <!-- <div>
+                    {{form.remember.label()}}
+                    {{form.remember()}}
+                </div> -->
+                <div class="login-btns">
+			{{ form.signin(class="register-grp_btn") }}
+
+		</div>
+
+		</div>
+		<!--<div class="flash_message_success">
+		</div>-->
+
+            </form>
+        </fieldset>
+
+    </div>
+
+</section>
+
+<!-- link this file whit css  -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/login.js') }}"></script>
+{% endblock %}
+
+
+{% block footer %} {% endblock %}

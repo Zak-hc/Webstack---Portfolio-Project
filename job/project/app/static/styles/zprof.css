@@ -1,0 +1,23 @@
+/* static/styles/profile.css */
+
+.profile-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+}
+
+.profile-content {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+/* Ajoutez d'autres styles selon vos besoins */
+

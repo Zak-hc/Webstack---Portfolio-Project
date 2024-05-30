@@ -1,0 +1,234 @@
+* {
+  padding: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0px;
+}
+
+.title-section {
+  height: 50px;
+  /* background-color: rgb(46, 46, 138); */
+  /* border: 1px solid black; */
+  /* border: 1px solid white; */
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+}
+
+.title-section h2 {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(98, 202, 181);
+}
+
+.posts-container {
+  /* background-color: rgb(46, 46, 138); */
+  margin: auto;
+  height: 690px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.right-left {
+  width: 570px;
+  margin-left: 10px;
+  align-self: flex-start;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 660px;
+  /* border: 1px solid black; */
+}
+
+.next-post {
+  width: 560px;
+  display: flex;
+  height: 310px;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.down-post {
+  width: 550px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  height: 160px;
+}
+
+.img-down-place {
+  width: 150px;
+  height: 140px;
+  /* border: 1px solid white; */
+}
+
+.img-down-text {
+  width: 370px;
+  height: 140px;
+  /* border: 1px solid white; */
+}
+
+.img-main-post {
+  width: 500px;
+  margin-top: 15px;
+  height: 220px;
+  /* border: 1px solid white; */
+}
+
+.img-size {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.bold-p {
+  align-self: flex-start;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.text-post {
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+.right-side {
+  width: 580px;
+  margin-top: 20px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 670px;
+  /* border: 1px solid black; */
+}
+
+.right-side-post {
+  width: 565px;
+  margin: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 120px;
+  /* border: 1px solid black; */
+}
+
+.img-small-post {
+  width: 150px;
+  height: 90px;
+  /* border: 1px solid white; */
+}
+
+.img-small-text {
+  width: 390px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  /* border: 1px solid black; */
+}
+
+.img-small-text p {
+  margin-left: 10px;
+}
+
+.right-side-img-main {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-post-down {
+  color: white;
+}
+
+.voir-tout {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 60px;
+  /* border: 1px solid black; */
+}
+
+.voir-tout button {
+  padding: 5px;
+  font-size: 17px;
+  margin-top: 10px;
+  background-color: rgb(90, 161, 147);
+  border-radius: 5px;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 190px;
+}
+
+.nav_title {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  /* border: 1px solid black; */
+}
+
+.nav_title h1{
+  background-color: rgb(98, 202, 181);
+  padding: 2px;
+  border-radius: 5px;
+  color: white;
+}
+
+.carriere_conseils {
+  width: 90%;
+  margin: auto;
+  height: 60px;
+  /* border: 1px solid red; */
+}
+
+.boxx {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  /* border: 1px solid green; */
+}
+
+.post-carriere_info {
+  width: 280px;
+  height: 250px;
+  /* border: 1px solid black; */
+}
+
+.text-box {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  height: 70px;
+  /* border: 1px solid red; */
+}
+
+.text-img {
+  width: 100%;
+  height: 175px;
+  /* border: 1px solid red; */
+}

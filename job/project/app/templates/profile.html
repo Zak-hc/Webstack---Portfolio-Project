@@ -1,0 +1,107 @@
+<head>
+    <link rel="stylesheet" href="/static/styles/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Montserrat:wght@300;400;500;600&family=Noto+Sans+Arabic:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--  <link rel="stylesheet" href="../static/css/main.css">  hadi method classic ohadi li ltht
+B jinja style !  -->
+<!-- <link rel="stylesheet" href="{{ url_for('static' , filename='styles/jinjatest.css')}}"> -->
+<link rel="stylesheet" href="{{ url_for('static' , filename='styles/register.css')}}">
+<link rel="stylesheet" href="{{ url_for('static' , filename='styles/contact.css')}}">
+<link rel="stylesheet" href="{{ url_for('static' , filename='styles/footer.css')}}">
+<link rel="stylesheet" href="{{ url_for('static' , filename='styles/login.css')}}">
+<link rel="stylesheet" href="{{ url_for('static' , filename='styles/style.css')}}">
+<link rel="stylesheet" href="{{ url_for('static' , filename='styles/styles.css')}}">
+<link rel="stylesheet" href="{{ url_for('static' , filename='styles/test.css')}}">
+<!-- lets call js white jinja style  -->
+<script src="{{ url_for('static' , filename='js/login.js') }}"></script>
+</head>
+<!-- navbar.html -->
+<div class="navbar1">
+    <a href="{{url_for('homepage')}}"><div class="logoA"> </div></a>
+    <div class="ctgries1">
+        <span><a href="{{url_for('homepage')}}">Accueil |</a></span>
+        <span><a href="{{ url_for('sctr_prv')}}">Secteur Prive</a></span>
+        <span><a href="{{ url_for('sctr_pblc')}}">Secteur Public</a></span>
+        <span><a href="{{url_for('councours')}}">les modeles des councours</a></span>
+        <span><a href="{{ url_for('stages')}}"> Stages</a></span>
+        <span><a href="{{ url_for('orientation')}}">Orientation</a></span>
+    </div>
+    <div class="cntcUSBTN">
+        <a href="{{ url_for('profile')}}" id="signinbtn"> Profile</a>
+        <a href="{{ url_for('login')}}" id="signupbtn"> Log out</a>
+    </div>
+</div>
+
+<div class="profile_page">
+  <div class="user_porfile_img_vile">
+    <div class="img_zone_profile">
+        <img class="img_fit" src="/static/image/profile_page_img.webp">
+    </div>
+    <div class="name_and_vile">
+        <div class="name_user">
+		<p>{{current_user.username}}</p>
+        </div>
+        <div class="vile_user">
+            <img src="/static/image/adress_img.webp">
+            <p>Casablanca</p>
+        </div>
+    </div>
+  </div>
+  <div class="mes_infos">
+        <ul class="list_mes_infos">
+		<li>{{current_user.username}}</li>
+            <li class="li_hover_mes">Mes Infos</li>
+        </ul>
+  </div>
+  <!-- HERE DIV IS REALTED TO CHANGING THE PASS IF CORRECT -->
+  <div class="pass_zone">
+    <div class="current_user_email">
+	    <p>Votre adresse email : {{current_user.email}}</p>
+    </div>
+    <!-- PASSWORD INPUTS -->
+    <div class="password_fileds_zone">
+        <div class="password_1">
+            <p>Votre ancien mot de passe :</p>
+            <!-- HERE WILL CHANGE WITH OUT INPUT-->
+            <input placeholder="YOUR PASSWORD" class="input_current_password" type="text">
+        </div>
+        <div class="password_1">
+            <p>Nouveau mot de pass : </p>
+            <!-- HERE WILL CHANGE WITH OUT INPUT-->
+            <input placeholder="NEW PASSWORD" class="input_current_noveau" type="text">
+        </div>
+    </div>
+    <p class="mark_password">Enter 6 et 20 caracteries (letters de l'alphapet latin et chiffers).</p>
+    <button class="btn_change_mot_pass" type="submit">Changer le mot de pass</button>
+  </div>
+  <!-- INFO SECTION LIKE USERNAME AND EMAIL -->
+  <div class="info_place_for_user">
+	  <form class="form_now" method="post" action="{{ url_for('profile') }}">
+            <div class="title_section">
+                <h3>USER INFO</h3>
+            </div>
+            <!-- HERE USERNAME -->
+            <div class="username_place">
+                <!-- HERE LABEL AND INPUT FROM FLASK -->
+                    <input class="input_em" placeholder="Tapez votre nouveau username" id="username" name="username" type="username" value="{{ current_user.usename }}" required>            
+	    </div>
+            <div class="email_place">
+                <!-- HERE LABEL AND INPUT FROM FLASK -->
+	            <input class="input_em" placeholder="Tapez votre nouvelle adresse email" id="email" name="email" type="email" value="" required>
+
+            </div>
+            <div class="ville_place">
+                <!-- HERE LABEL AND INPUT FROM FLASK -->
+                <p>Ville :</p>
+            </div>
+            <div class="btn_modifer">
+            <button style="cursor: pointer" type="submit">Modifier</button>
+        </div>
+            
+        </form>
+  </div>
+</div>        
